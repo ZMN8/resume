@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, h1, h2, h3, h4, ul, li, dl, dt, dd, ol, form, table, tr, td, span, label, input, select, option, a, img, i, em, strong, b {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+
+html {
+    /*rem单位永远以html做参考缩放；百分比和em以父元素做参考*/
+    font-size: 625%; /*16*6.25=100px*/
+}
+
+body {
+    font-family: "微软雅黑";
+    color: #000000;
+    max-width: 640px; /*效果图的宽度*/
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 0.24rem; /*body中默认使用做多的字体大小*/
+}
+
+.clearfix {*zoom: 1;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*main demo*/
+html,body,.swiper-container{ width:100%; height:100%;}
+.page1{position: relative;}
+.myImg{height:70%;}
+.firstPage{padding-top:0.4rem;text-align: center;font-weight: 600;color: #e0461b;letter-spacing:0.2rem;font-size: 0.32rem}
+.firstPage span{margin-left: 0.2rem;}
+.eglish{text-align: center;font-weight: 500;color: #c4401b;font-size: 0.1rem;margin-top: 0.1rem}
+.director{position: absolute;bottom:0.2rem;left:50%;margin-left: -0.12rem;}
+.dir{width:0.24rem;height:0.03rem;}
+.dir .left{float: left;width:0.12rem;height:0.03rem;background-color: #eb9534;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transform-origin: right 50%;
+    -moz-transform-origin: right 50%;
+    -ms-transform-origin: right 50%;
+    -o-transform-origin: right 50%;
+    transform-origin: right 50%;
+}
+.dir .right{float: left;
+   width:0.12rem;height:0.03rem;background-color: #eb9534;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(325deg);
+    -webkit-transform-origin: left 100%;
+    -moz-transform-origin: left 100%;
+    -ms-transform-origin: left 100%;
+    -o-transform-origin: left 100%;
+    transform-origin: left 100%;
+}
+.dir_1{position: absolute;bottom: 0.05rem;left: 0;}
+.dir_2{position: absolute;bottom: 0.15rem;left: 0;}
+ .myWish{position: relative;}
+ .wish i{color:#c4401b;line-height: 0.5rem;padding-left: 0.2rem;}
+ .work{color:#eb9534;line-height: 0.24rem;font-size: 0.22rem;position: absolute;left:2.3rem;bottom:0.15rem;}
+ .fenge{display: block;width:100%;height:0.03rem;background-color: #c4401b;}
+.PersonalInform{padding-left: 0.1rem;padding-top:0.1rem;}
+.icon-user{color:#7dc234;}
+.info_left{width:40%;float: left;}
+.info_left p{width:100%;text-align: right;margin-bottom: 0.15rem;color:#eb9534;}
+.info_right{width:60%;float: left;}
+.info_right p{width:100%;margin-bottom: 0.15rem;color:#eb9534;}
+.icon-edit,.icon-briefcase,.icon-wrench{color:#c4401b;line-height: 0.5rem;padding-left: 0.2rem;}
+.education dt{margin:0.2rem 0 0.1rem 0.2rem;line-height: 0.24rem;}
+.education dt span{margin-left: 0.1rem;color:#000000;font-size: 0.18rem;font-weight: 500;}
+.en{font-style: normal;font-size: 0.05rem;margin-left: 0.1rem;color:#c4401b;}
+.education dt .Place {color:#6aa84f;}
+.education dt .Time {font-size: 0.12rem;}
+.education dt .DO {font-size: 0.16rem;}
+.education dd{margin:0 0 0.1rem 0.2rem;line-height: 0.2rem;font-size: 0.14rem;text-indent: 0.02rem;}
+.education dd .what{line-height: 0.2rem;font-size: 0.14rem;text-indent: 0.02rem;}
+.skill{margin-top:0.2rem;}
+.skill li{height:0.28rem;}
+.skill li p{width:40%;color: #eb9534;text-align: right;float: left;line-height: 0.28rem;}
+.skill li ul{width:60%;float: left;}
+.skill li ul .icon-star{color:#e1f2df;float: left;margin-left:0.2rem; margin-top:0.02rem;}
