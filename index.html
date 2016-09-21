@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport"  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title></title>
+
     <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
 
 </head>
 <body>
 <div class="swiper-container" id="container">
     <div class="swiper-wrapper">
         <div class="swiper-slide page1">
-            <div class="myImg"></div>
-            <div class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
-                <p class="ani firstPage" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+            <div class="myImg">
+                <div class="circle"></div>
+            </div>
+            <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                <p class="ani firstPage" swiper-animate-effect="swing" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
                     <span>周美娜</span>
                 </p>
                 <p class="eglish">[ZHOUMEINA RESUME]</p>
             </div>
+            <div class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+                <p class="ani myWish" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                    <span>求职意向</span>
+                </p>
+                <p class="job ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s">前端开发工程师</p>
+            </div>
             <div class="director">
-                <div class="dir_1 dir">
-                    <i class="left"></i>
-                    <i class="right"></i>
-                </div>
-                <div class="dir_2 dir ani" >
-                    <i class="left"></i>
-                    <i class="right"></i>
-                </div>
+                <i class="icon-double-angle-down"></i>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div class="myWish">
-                <p class="ani wish" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.3s" swiper-animate-delay="0.3s"><i class="icon-star">求职意向：</i></p>
-                <p class="ani work" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">前端开发工程师</p>
-                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s"></i>
+            <div class="myMessage ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+               <span class="icon-user">个人信息<i class="en">ABOUT ME</i></span>
+               <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s"></i>
             </div>
-            <h3 class="PersonalInform">
-                <i class="icon-user">个人信息</i>
-            </h3>
+
             <div class="info">
                 <div class="ani info_left" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
                     <p>姓&nbsp;&nbsp;&nbsp;&nbsp;名：</p>
@@ -50,7 +50,8 @@
                     <p>户&nbsp;&nbsp;&nbsp;&nbsp;籍：</p>
                     <p>毕业院校：</p>
                     <p>学历：</p>
-                    <p>专业：</p>
+                    <p>GitHub：</p>
+                    <p>Blog：</p>
                 </div>
                 <div class="ani info_right" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
                     <p>周美娜</p>
@@ -59,28 +60,23 @@
                     <p>杭州</p>
                     <p>中国计量大学</p>
                     <p>本科</p>
-                    <p>电子科学与技术专业</p>
+                    <p><a href="https://github.com/ZMN8">github.com/ZMN8</a></p>
+                    <p><a href="https://www.cnblogs.com/frontEnd-zmn/">爱运动的胖子</a></p>
                 </div>
             </div>
             <div class="director">
-                <div class="dir_1 dir">
-                    <i class="left"></i>
-                    <i class="right"></i>
-                </div>
-                <div class="dir_2 dir ani" >
-                    <i class="left"></i>
-                    <i class="right"></i>
-                </div>
+                <i class="icon-double-angle-down"></i>
             </div>
+
         </div>
 
 
         <div class="swiper-slide">
             <div class="myEdu ani"  swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                 <span class="icon-edit">教育背景<i class="en">EDUCATIONAL BACKGROUND</i></span>
-                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s"></i>
+                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s"></i>
             </div>
-            <dl class="education ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+            <dl class="education ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
                <dt>
                    <span class="Place ">♦&nbsp;杭州若恒科技有限公司</span>
                    <span class="Time ">2015/11-2016/9</span>
@@ -88,14 +84,14 @@
                </dt>
                 <dd>
                     <p class="what">
-                        1.熟悉W3C标准，能够熟练运用HTML、CSS进行合理的网页制作，熟悉一些主流浏览器的CSS兼容性问题的解决方法；<br/>
-                        2.熟悉JavaScript语言，能够进行常规WEB应用开发；<br/>
-                        3.熟悉Ajax、jQuery，拥有移动端开发经验；<br/>
-                        4.了解Swiper、Zepto、Gulp、Less、Git等主流开发工具；<br/>
+                        <strong>1.</strong>熟悉W3C标准，能够熟练运用HTML、CSS进行合理的网页制作，熟悉一些主流浏览器的CSS兼容性问题的解决方法；<br/>
+                        <strong>2.</strong>熟悉JavaScript语言，能够进行常规WEB应用开发；<br/>
+                        <strong>3.</strong>熟悉Ajax、jQuery，拥有移动端开发经验；<br/>
+                        <strong>4.</strong>了解Swiper、Zepto、Gulp、Less、Git等主流开发工具；<br/>
                     </p>
                 </dd>
             </dl>
-            <dl class="education ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+            <dl class="education ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">
                 <dt>
                     <span class="Place ">♦&nbsp;中国计量大学</span>
                     <span class="Time ">2013/9-至今</span>
@@ -103,56 +99,57 @@
                 </dt>
                 <dd>
                     <p class="what">
-                        1.在校成绩良好，绩点3.64；<br/>
-                        2.每年均获奖学金，其中院二等奖学金（专业前7%）；<br/>
-                        3.参加大学生物理创新竞赛，获省二等奖；<br/>
+                        <strong>1.</strong>在校成绩良好，绩点3.64；<br/>
+                        <strong>2.</strong>每年均获奖学金，其中院二等奖学金（专业前7%）；<br/>
+                        <strong>3.</strong>参加大学生物理创新竞赛，获省二等奖；<br/>
                     </p>
                 </dd>
             </dl>
-            <dl class="education ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
-                <dt>
-                    <span class="Place ">♦&nbsp;萧山第二高级中学</span>
-                    <span class="Time ">2010/9-2013/6</span>
-                    <span class="DO ">理科</span>
-                </dt>
-            </dl>
-            <div class="myExp ani"  swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="1s">
-                <span class="icon-briefcase">工作经验<i class="en">WORK EXPERIENCE</i></span>
-                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="1s"></i>
+
+            <div class="director">
+                <i class="icon-double-angle-down"></i>
             </div>
-            <dl class="education ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+        </div>
+        <div class="swiper-slide">
+            <div class="myExp ani"  swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                <span class="icon-briefcase">工作经验<i class="en">WORK EXPERIENCE</i></span>
+                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"></i>
+            </div>
+            <dl class="education ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
                 <dt>
                     <span class="Place ">♦&nbsp;杭州若恒科技有限公司</span>
                     <span class="Time ">2015/5-至今</span>
-                    <span class="DO ">前端开发实习</span>
+                    <span class="DO " style="font-size: 0.22rem;">前端开发实习</span>
                 </dt>
                 <dd>
                     <p class="what">
-                        1.配合完成web前端或移动端的开发工作。<br/>
-                        2.负责把视觉设计师的效果图转化成HTML，CSS和JS等符合W3C标准的、兼容主流浏览器的前端代码。<br/>
+                        <strong>1.</strong>配合完成web前端或移动端的开发工作。<br/>
+                        <strong>2.</strong>负责把视觉设计师的效果图转化成HTML，CSS和JS等符合W3C标准的、兼容主流浏览器的前端代码。<br/>
                     </p>
                 </dd>
             </dl>
-            <div class="director">
-                <div class="dir_1 dir">
-                    <i class="left"></i>
-                    <i class="right"></i>
-                </div>
-                <div class="dir_2 dir ani" >
-                    <i class="left"></i>
-                    <i class="right"></i>
-                </div>
+            <div class="myhonor ani"  swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                <span class="icon-trophy">荣誉证书<i class="en">CERTIFICATE OF HONOR</i></span>
+                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"></i>
             </div>
+            <ul class="honor ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                   <li><strong>1.</strong>CET-4（504分）</li>
+                   <li><strong>2.</strong>全国计算机等级证书二级 C语言（90分）</li>
+                   <li><strong>3.</strong>浙江省大学生物理创新竞赛二等奖</li>
+                   <li><strong>3.</strong>国家职业资格证书五级（装饰美工）</li>
+            </ul>
         </div>
+
         <div class="swiper-slide ">
             <div class="mySkill ani"  swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                 <span class=" icon-wrench">技能掌握<i class="en">MARSTER SKILL</i></span>
-                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"></i>
+                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s"></i>
             </div>
-            <ul class="skill">
-                <li>
-                    <p>HTML：</p>
-                    <ul class="clearfix">
+
+            <ul class="skill" >
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">HTML：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -160,9 +157,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>CSS：</p>
-                    <ul class="clearfix">
+                <li  class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">CSS：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -170,9 +167,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>Photoshop：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">Photoshop：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -180,9 +177,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>JavaScript：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">Sprite：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -190,9 +187,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>JQuery：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">JavaScript：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -200,9 +197,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>AJAX：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">JQuery：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -210,9 +207,10 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>JSON：</p>
-                    <ul class="clearfix">
+
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">JSON：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -220,9 +218,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>DOM：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">DOM：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -230,9 +228,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>Sprite：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">AJAX：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -240,9 +238,10 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>Gulp：</p>
-                    <ul class="clearfix">
+
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">Gulp：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -250,9 +249,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>Less：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">Less：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -260,9 +259,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>Zepto：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">Zepto：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -270,9 +269,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>Swiper：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">Swiper：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -280,9 +279,9 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>XML：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">XML：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -290,9 +289,19 @@
                         <li class=" icon-star"></li>
                     </ul>
                 </li>
-                <li>
-                    <p>Node.js：</p>
-                    <ul class="clearfix">
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">jsonp：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                        <li class=" icon-star"></li>
+                        <li class=" icon-star"></li>
+                        <li class=" icon-star"></li>
+                        <li class=" icon-star"></li>
+                        <li class=" icon-star"></li>
+                    </ul>
+                </li>
+                <li class="clearfix">
+                    <p class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">Node.js：</p>
+                    <ul class="clearfix ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
                         <li class=" icon-star"></li>
@@ -302,14 +311,54 @@
                 </li>
             </ul>
             <div class="director">
-                <div class="dir_1 dir">
-                    <i class="left"></i>
-                    <i class="right"></i>
+                <i class="icon-double-angle-down"></i>
+            </div>
+        </div>
+        <div class="swiper-slide ">
+            <div class="mypro ani"  swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.3s">
+                <span class=" icon-bookmark">我的项目<i class="en">MY PROJECT</i></span>
+                <i class="ani fenge" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s"></i>
+            </div>
+            <div class="pro_container ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.6s">
+                <div class="swiper-container" id="pro_container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/huizhong.jpg" alt="汇众"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/XTL.jpg" alt="雪铁龙"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tiaoban.png" alt="跳板网"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/springSport.png" alt="春季运动指南"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/superSave.jpg" alt="超级囤货日"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/wechatwepay.jpg" alt="微付客"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/jsj.png" alt="计算机"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/2048.png" alt="2048小游戏"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/publish.png" alt="发布"/>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="dir_2 dir ani" >
-                    <i class="left"></i>
-                    <i class="right"></i>
+                <div class="describe">
+                    <a href="https://zmn8.github.io/HuiZhong/">汇众</a>
                 </div>
+            </div>
+
+            <div class="director">
+                <i class="icon-double-angle-down"></i>
             </div>
         </div>
         </div>
@@ -324,7 +373,7 @@
 <script src="js/swiper.animate1.0.2.min.js"></script>
 <script src="js/js.js"></script>
 <script>
-
+    var describeNode=$(".describe a");
     var mySwiper = new Swiper ('#container', {
         direction:'vertical',
         observer:true,//当swiper改变时。自动更新
@@ -336,13 +385,32 @@
         },
         onSlideChangeEnd: function(swiper){
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            var nowPos=mySwiper.activeIndex;//当前索引
+            if(nowPos==4){
+                setTimeout(json.skillFun,1500);
+
+            }else{
+                json.clearskillFun();
+            }
         }
     });
-    console.log(mySwiper)
-    mySwiper.onResize(function(){
-        mySwiper.update();
-        alert("g")
-    })
+    var mySwiper_1 = new Swiper ('#pro_container', {
+        effect : 'coverflow',
+        slidesPerView: 2,
+        centeredSlides: true,
+        coverflow: {
+            rotate: 30,
+            stretch:10,
+            depth:60,
+            modifier: 2,
+            slideShadows : true
+        },
+        onSlideChangeEnd: function(swiper){
+            var altVal=$('.swiper-slide-active').children('img').attr('alt');
+            var linkVal=json.linkjson[altVal];
+             describeNode.attr("href",linkVal).text(altVal);
+        }
+    });
 </script>
 </body>
 </html>
