@@ -64,10 +64,10 @@ html,body,.swiper-container{ width:100%; height:100%;}
 .info_right{width:60%;float: left;}
 .info_right p{width:100%;margin-bottom: 0.15rem;color:#eb9534;font-size: 0.26rem;line-height:0.3rem;}
 .info_right p a{text-decoration:underline; }
-.mySkill,.myEdu,.myExp,.mypro,.myWish,.myMessage{margin-top: 0.3rem}
+.mySkill,.myEdu,.myExp,.mypro,.myWish,.myMessage,.contact{margin-top: 0.3rem}
 .myhonor{margin-top: 0.6rem;}
 .honor{margin: 0.3rem auto 0;width:5rem;}
-.icon-edit,.icon-briefcase,.icon-wrench,.icon-bookmark,.icon-user,.icon-trophy{color:#c4401b;line-height:0.6rem;padding-left: 0.2rem;margin-top:0.2rem;margin-left: 0.2rem;font-size: 0.3rem;}
+.icon-edit,.icon-briefcase,.icon-wrench,.icon-bookmark,.icon-user,.icon-trophy,.icon-envelope{color:#c4401b;line-height:0.6rem;padding-left: 0.2rem;margin-top:0.2rem;margin-left: 0.2rem;font-size: 0.3rem;}
 .education{margin-top: 0.4rem;}
 .education dt{margin:0.3rem auto 0.1rem;line-height: 0.24rem;width:5.8rem;}
 .education dt span{margin-left: 0.1rem;color:#000000;font-size: 0.18rem;font-weight: 500;}
@@ -85,3 +85,6 @@ html,body,.swiper-container{ width:100%; height:100%;}
 .describe a{color:#78a6df;}
 .myImg{position: relative;}
 .myImg .circle{width:3rem;height:3rem;border-radius: 50%;position: absolute;top:50%;left: 50%;margin-top:-1.5rem;margin-left: -1.5rem;background:url("../img/me.jpg");background-size:3rem 3rem;}
+.contactMain{margin: 0.6rem auto 0;width:5rem}
+.contactMain li{height:0.5rem;line-height: 0.5rem;}
+.contactMain li i{font-style: normal;margin-left: 0.04rem;font-size: 0.26rem;}

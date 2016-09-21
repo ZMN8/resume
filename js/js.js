@@ -11,6 +11,7 @@
 var json={
     width:640,
     director:$(".director"),
+    contactLinodes:$('.contactMain li'),
     linkjson:{
         "汇众":"https://zmn8.github.io/HuiZhong/" ,
         "雪铁龙":"https://zmn8.github.io/Citroen_XTL/",
@@ -22,12 +23,17 @@ var json={
         "2048小游戏":"https://zmn8.github.io/2048Game/",
         "发布":"https://zmn8.github.io/Publish/"
     },
+    contactJson:{
+        0:"电话：15957136209",
+        1:"QQ：1033711326",
+        2:"邮箱：13136108758@163.com",
+        3:"住址：杭州市江干区中国计量大学"
+    },
+
     fadeInFun:function(){
         json.director.animate({"bottom":"0.05rem","opacity":"0"},1000,'ease-out',function(){
             json.director.css({"bottom":"0.4rem","opacity":"1"});
-
         });
-
     },
     autoFun:function(){
         var winWidth=document.documentElement.clientWidth;//屏幕可视宽度
@@ -48,7 +54,7 @@ var json={
                     })
                 })
             })
-        })
+        });
         var liNodes_2=ulNods.eq(1).children();
         liNodes_2.eq(0).animate({"color":"#7dc234"},100,function(){
             liNodes_2.eq(1).animate({"color":"#7dc234"},100,function(){
@@ -58,7 +64,7 @@ var json={
                     })
                 })
             })
-        })
+        });
         var liNodes_3=ulNods.eq(2).children();
         liNodes_3.eq(0).animate({"color":"#7dc234"},100,function(){
             liNodes_3.eq(1).animate({"color":"#7dc234"},100,function(){
@@ -66,7 +72,7 @@ var json={
                     liNodes_3.eq(3).animate({"color":"#7dc234"},100)
                 })
             })
-        })
+        });
         var liNodes_4=ulNods.eq(3).children();
         liNodes_4.eq(0).animate({"color":"#7dc234"},100,function(){
             liNodes_4.eq(1).animate({"color":"#7dc234"},100,function(){
@@ -148,14 +154,21 @@ var json={
         var liNodes_16=ulNods.eq(15).children();
         liNodes_16.eq(0).animate({"color":"#7dc234"},100);
     },
-    touchFun:function(){
-        var swiperNodes=document.querySelectorAll('#pro_container .swiper-slide');
-        for(var i =0;i<swiperNodes.length;i++){
-            swiperNodes[i].addEventListener('touchmove', function (e) {
-                var touch = e.touches[0];
-                console.log($('.swiper-slide-active').children('img').attr('alt'))
-            })
-        }
+    creatiNode:function(){
+        var frag=document.createDocumentFragment();
+          for(var i=0;i<this.contactLinodes.length;i++){
+              var str=this.contactJson[i];
+              var strLengh=str.length;
+              for(var j=0;j<strLengh;j++){
+                  var iNode=document.createElement("i");
+                  iNode.textContent=str.charAt(j);
+                  iNode.className="ani";
+                  $(iNode).attr({"swiper-animate-effect":"bounceInDown","swiper-animate-duration":"1s","swiper-animate-delay":(0.1*(j+1)+0.3)+"s"});
+                  frag.appendChild(iNode);
+              }
+              this.contactLinodes[i].appendChild(frag);
+
+          }
 
     },
     clearskillFun:function(){
@@ -163,15 +176,14 @@ var json={
     },
     init:function(){
         var that=this;
-
-//        that.touchFun();
        $(function(){
            that.autoFun();
        });
+        that.creatiNode();
         window.setInterval( that.fadeInFun,2000);
         window.addEventListener("resize",function(){
             that.autoFun();
         })
     }
-}
+};
 json.init();
