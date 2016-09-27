@@ -81,8 +81,8 @@ html,body,.swiper-container{ width:100%; height:100%;}
 .skill li p{width:40%;color: #eb9534;text-align: right;float: left;line-height: 0.4rem;font-size: 0.32rem;}
 .skill li ul{width:60%;float: left;}
 .skill li ul .icon-star{color:#e1f2df;float: left;margin-left:0.2rem; margin-top:0.02rem;font-size: 0.32rem;}
-.describe{text-align: center;line-height: 0.5rem;margin-top: 0.3rem;}
-.describe a{color:#78a6df;}
+.describe{text-align: center;line-height: 0.5rem;margin-top: 0.5rem;}
+.describe a{color:#78a6df;font-size: 0.32rem;}
 .myImg{position: relative;}
 .myImg .circle{width:3rem;height:3rem;border-radius: 50%;position: absolute;top:50%;left: 50%;margin-top:-1.5rem;margin-left: -1.5rem;background:url("../img/ME.png");background-size:3rem 3rem;}
 .contactMain{margin: 0.6rem auto 0;width:5rem}
