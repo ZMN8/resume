@@ -35,14 +35,6 @@ var json={
             json.director.css({"bottom":"0.4rem","opacity":"1"});
         });
     },
-    autoFun:function(){
-        var winWidth=document.documentElement.clientWidth;//屏幕可视宽度
-        if(winWidth>this.width){
-            document.documentElement.style.fontSize=625+"%";
-        }else{
-            document.documentElement.style.fontSize=winWidth/this.width*625+"%";
-        }
-    },
     skillFun:function(){
         var ulNods=$(".skill ul") ;
         var liNodes_1=ulNods.eq(0).children();
@@ -145,14 +137,22 @@ var json={
         });
         var liNodes_14=ulNods.eq(13).children();
         liNodes_14.eq(0).animate({"color":"#7dc234"},100,function(){
-            liNodes_14.eq(1).animate({"color":"#7dc234"},100)
+            liNodes_14.eq(1).animate({"color":"#7dc234"},100,function(){
+                liNodes_14.eq(2).animate({"color":"#7dc234"},100)
+            })
         });
         var liNodes_15=ulNods.eq(14).children();
         liNodes_15.eq(0).animate({"color":"#7dc234"},100,function(){
             liNodes_15.eq(1).animate({"color":"#7dc234"},100)
         });
         var liNodes_16=ulNods.eq(15).children();
-        liNodes_16.eq(0).animate({"color":"#7dc234"},100);
+        liNodes_16.eq(0).animate({"color":"#7dc234"},100,function(){
+            liNodes_16.eq(1).animate({"color":"#7dc234"},100)
+        });
+        var liNodes_17=ulNods.eq(16).children();
+        liNodes_17.eq(0).animate({"color":"#7dc234"},100,function(){
+            liNodes_17.eq(1).animate({"color":"#7dc234"},100)
+        });
     },
     creatiNode:function(){
         var frag=document.createDocumentFragment();
@@ -176,9 +176,6 @@ var json={
     },
     init:function(){
         var that=this;
-       $(function(){
-           that.autoFun();
-       });
         that.creatiNode();
         window.setInterval( that.fadeInFun,2000);
         window.addEventListener("resize",function(){

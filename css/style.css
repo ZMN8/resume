@@ -28,7 +28,7 @@ body {
     margin: 0 auto;
     font-size: 0.24rem; /*body中默认使用做多的字体大小*/
     background: url("../img/bg.jpg");
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 .clearfix {*zoom: 1;}
@@ -84,7 +84,7 @@ html,body,.swiper-container{ width:100%; height:100%;}
 .describe{text-align: center;line-height: 0.5rem;margin-top: 0.3rem;}
 .describe a{color:#78a6df;}
 .myImg{position: relative;}
-.myImg .circle{width:3rem;height:3rem;border-radius: 50%;position: absolute;top:50%;left: 50%;margin-top:-1.5rem;margin-left: -1.5rem;background:url("../img/me.jpg");background-size:3rem 3rem;}
+.myImg .circle{width:3rem;height:3rem;border-radius: 50%;position: absolute;top:50%;left: 50%;margin-top:-1.5rem;margin-left: -1.5rem;background:url("../img/ME.png");background-size:3rem 3rem;}
 .contactMain{margin: 0.6rem auto 0;width:5rem}
 .contactMain li{height:0.5rem;line-height: 0.5rem;}
 .contactMain li i{font-style: normal;margin-left: 0.04rem;font-size: 0.26rem;}
